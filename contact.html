@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/Logo-removebg-preview.png">
+    <title>Contact | Innovesiea</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark app-nav">
+        <div class="container">
+            <a class="navbar-brand brand-mark" href="index.html"><span>In</span>Innovesiea</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero compact">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-5">
+                        <p class="eyebrow">Contact</p>
+                        <h1>Tell us what you want to build next.</h1>
+                        <p>Share your idea, challenge, or product goal. Innovesiea will help shape it into a clear technology plan.</p>
+                        <div class="contact-strip"><i class="bi bi-envelope"></i><span>hello@innovesiea.com</span></div>
+                        <div class="contact-strip"><i class="bi bi-geo-alt"></i><span>Remote-first, serving global teams</span></div>
+                    </div>
+                    <div class="col-lg-7">
+                        <form class="contact-form" novalidate>
+                            <div class="form-alert" role="status" aria-live="polite"></div>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label" for="contactName">Your name</label>
+                                    <input class="form-control" id="contactName" name="name" type="text" placeholder="Your name" autocomplete="name" data-rules="required|min:2">
+                                    <div class="field-error"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="contactEmail">Email address</label>
+                                    <input class="form-control" id="contactEmail" name="email" type="email" placeholder="Email address" autocomplete="email" data-rules="required|email">
+                                    <div class="field-error"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="projectType">Project type</label>
+                                    <select class="form-select" id="projectType" name="projectType" data-rules="required">
+                                        <option value="">Choose a project type</option>
+                                        <option>Web platform</option>
+                                        <option>Mobile app</option>
+                                        <option>AI automation</option>
+                                        <option>Cloud modernization</option>
+                                        <option>Security review</option>
+                                    </select>
+                                    <div class="field-error"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="budgetRange">Budget range</label>
+                                    <select class="form-select" id="budgetRange" name="budget" data-rules="required">
+                                        <option value="">Select budget range</option>
+                                        <option>$5k - $15k</option>
+                                        <option>$15k - $40k</option>
+                                        <option>$40k - $80k</option>
+                                        <option>$80k+</option>
+                                    </select>
+                                    <div class="field-error"></div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label" for="projectMessage">Project message</label>
+                                    <textarea class="form-control" id="projectMessage" name="message" rows="6" placeholder="What should we build together?" data-rules="required|min:20"></textarea>
+                                    <div class="message-meter"><span></span></div>
+                                    <div class="field-error"></div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-check consent-check" for="contactConsent">
+                                        <input class="form-check-input" id="contactConsent" name="consent" type="checkbox" data-rules="required">
+                                        <span>I agree to be contacted about this project.</span>
+                                    </label>
+                                    <div class="field-error"></div>
+                                </div>
+                                <div class="col-12"><button class="btn btn-primary btn-lg w-100" type="submit">Send Message</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+            <p class="mb-0">Innovesiea builds intelligent IT products for modern companies.</p>
+            <p class="mb-0">hello@innovesiea.com</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

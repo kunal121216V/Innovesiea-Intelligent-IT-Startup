@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/Logo-removebg-preview.png">
+    <title>Solutions | Innovesiea</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark app-nav">
+        <div class="container">
+            <a class="navbar-brand brand-mark" href="index.html"><span>In</span>Innovesiea</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="project.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero compact">
+            <div class="container">
+                <p class="eyebrow">Solutions</p>
+                <h1 class="max-title">Innovation tracks for startups, growing brands, and enterprise teams.</h1>
+            </div>
+        </section>
+
+        <section class="section-pad section-light">
+            <div class="container">
+                <div class="solution-switcher" aria-label="Solution details">
+                    <button class="solution-tab active" type="button" data-solution="launch">Launch</button>
+                    <button class="solution-tab" type="button" data-solution="scale">Scale</button>
+                    <button class="solution-tab" type="button" data-solution="automate">Automate</button>
+                </div>
+                <div class="dynamic-panel" id="solutionDetail" aria-live="polite"></div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="solution-card">
+                            <span>Launch</span>
+                            <h3>MVP Accelerator</h3>
+                            <p>From idea to validated product with UX, architecture, core features, analytics, and launch support.</p>
+                            <a href="contact.html">Start a build <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="solution-card">
+                            <span>Scale</span>
+                            <h3>Cloud Modernization</h3>
+                            <p>Move slow systems into resilient cloud workflows with automation, monitoring, and secure access.</p>
+                            <a href="contact.html">Modernize now <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="solution-card">
+                            <span>Automate</span>
+                            <h3>AI Operations Layer</h3>
+                            <p>Connect data, documents, teams, and repetitive tasks into intelligent internal systems.</p>
+                            <a href="contact.html">Automate work <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+            <p class="mb-0">Innovesiea builds intelligent IT products for modern companies.</p>
+            <p class="mb-0">hello@innovesiea.com</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
